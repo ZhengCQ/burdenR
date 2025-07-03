@@ -1,0 +1,23 @@
+[project]
+name = "burdenr"
+version = "0.1.0"
+description = "A CLI tool to estimate relative burden risk between populations from VCF or genotype frequency files."
+authors = [
+    { name = "Zheng ChenQing", email = "zhengchenqing@qq.com" }
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "pandas",
+    "click",
+    "matplotlib",
+    "seaborn" 
+]
+
+[project.scripts]
+burdenr = "burdenr.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
